@@ -1,0 +1,8 @@
+# Core analyzer (ai_analyzer.py) needs NO third-party packages.
+# API layer:
+fastapi
+uvicorn
+# Optional: only if you want LLM feedback analysis / explanations (also set ANTHROPIC_API_KEY)
+# anthropic
+# Optional: nicer test runner (tests also run with the built-in unittest)
+# pytest
