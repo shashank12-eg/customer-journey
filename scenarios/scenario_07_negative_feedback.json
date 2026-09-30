@@ -1,0 +1,22 @@
+{
+  "scenario_name": "Severe Negative Product Feedback and Defect Report",
+  "customer_id": "CUST-1007",
+  "observed_friction": "Negative Product Feedback",
+  "evidence": "Customer submitted 1-star verified review stating product PROD-004 screen died after 3 days and battery overheats. Sentiment classified as strongly negative.",
+  "expected_cause": "Hardware component defect and failure to meet user quality expectations.",
+  "expected_severity": "HIGH",
+  "expected_recovery_action": "Automated proactive warranty resolution email offering immediate no-return replacement or 100% refund plus a 20% discount code.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000042",
+      "customer_id": "CUST-1007",
+      "session_id": "SESS-1007-REV",
+      "event_type": "feedback_submitted",
+      "product_id": "PROD-004",
+      "page_url": "/product/PROD-004/review",
+      "timestamp": "2026-09-16 14:20:00",
+      "dwell_time_seconds": "150",
+      "metadata": "{\"rating\": 1, \"sentiment\": \"negative\", \"feedback_id\": \"FDB-4002\"}"
+    }
+  ]
+}

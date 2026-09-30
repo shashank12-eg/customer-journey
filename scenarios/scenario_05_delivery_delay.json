@@ -1,0 +1,132 @@
+{
+  "scenario_name": "Logistics Delivery Delay with High Tracking Inquiries",
+  "customer_id": "CUST-1005",
+  "observed_friction": "Delivery Delay",
+  "evidence": "Order ORD-2005 overdue past estimated delivery date (2026-09-14). Customer checked parcel tracking status 6 times across 4 days with order stuck in 'delayed' transit.",
+  "expected_cause": "Carrier logistics hub congestion and delayed transit dispatch.",
+  "expected_severity": "HIGH",
+  "expected_recovery_action": "Proactive apology email/SMS with real-time carrier GPS tracking update, prioritized logistics expediting, and $15 store credit voucher.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000029",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-A",
+      "event_type": "product_view",
+      "product_id": "PROD-010",
+      "page_url": "/product/PROD-010",
+      "timestamp": "2026-09-10 09:30:00",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"size\": \"M\"}"
+    },
+    {
+      "event_id": "EVT-000030",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-010",
+      "page_url": "/cart",
+      "timestamp": "2026-09-10 09:30:55",
+      "dwell_time_seconds": "20",
+      "metadata": "{\"qty\": 1}"
+    },
+    {
+      "event_id": "EVT-000031",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-010",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-10 09:31:20",
+      "dwell_time_seconds": "40",
+      "metadata": "{\"method\": \"PayPal\"}"
+    },
+    {
+      "event_id": "EVT-000032",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-A",
+      "event_type": "payment_success",
+      "product_id": "PROD-010",
+      "page_url": "/checkout/confirmation",
+      "timestamp": "2026-09-10 09:32:10",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"payment_id\": \"PAY-5006\"}"
+    },
+    {
+      "event_id": "EVT-000033",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-A",
+      "event_type": "order_placed",
+      "product_id": "PROD-010",
+      "page_url": "/order/ORD-2005",
+      "timestamp": "2026-09-10 09:32:20",
+      "dwell_time_seconds": "40",
+      "metadata": "{\"order_id\": \"ORD-2004\", \"amount\": 54.0}"
+    },
+    {
+      "event_id": "EVT-000034",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-1",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-15 08:30:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 1}"
+    },
+    {
+      "event_id": "EVT-000035",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-2",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-15 19:15:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 1}"
+    },
+    {
+      "event_id": "EVT-000036",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-3",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-16 09:00:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 2}"
+    },
+    {
+      "event_id": "EVT-000037",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-4",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-16 16:45:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 2}"
+    },
+    {
+      "event_id": "EVT-000038",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-5",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-17 11:20:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 3}"
+    },
+    {
+      "event_id": "EVT-000039",
+      "customer_id": "CUST-1005",
+      "session_id": "SESS-1005-TRACK-6",
+      "event_type": "order_tracking_checked",
+      "product_id": "PROD-010",
+      "page_url": "/account/orders/ORD-2004/tracking",
+      "timestamp": "2026-09-18 14:10:00",
+      "dwell_time_seconds": "65",
+      "metadata": "{\"status\": \"Delayed in transit at hub\", \"days_overdue\": 3}"
+    }
+  ]
+}

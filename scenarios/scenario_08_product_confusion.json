@@ -1,0 +1,121 @@
+{
+  "scenario_name": "Product Information Confusion and High Hesitation",
+  "customer_id": "CUST-1008",
+  "observed_friction": "Product Information Confusion",
+  "evidence": "Customer repeatedly switched between technical specifications and sizing guides 8 times with 420s total dwell time on PROD-007 before exiting without cart addition.",
+  "expected_cause": "Complex technical specifications, unclear sizing chart, and compatibility ambiguity.",
+  "expected_severity": "MEDIUM",
+  "expected_recovery_action": "Trigger proactive contextual AI Shopping Assistant popup offering interactive sizing quiz, spec summary comparison, and live chat option.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000043",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "product_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007",
+      "timestamp": "2026-09-23 19:00:00",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"section\": \"hero\"}"
+    },
+    {
+      "event_id": "EVT-000044",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "specification_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#specs",
+      "timestamp": "2026-09-23 19:00:50",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"tab\": \"sensor_compatibility\", \"switch_count\": 1}"
+    },
+    {
+      "event_id": "EVT-000045",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "size_guide_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#strap_fit",
+      "timestamp": "2026-09-23 19:01:25",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"modal\": \"strap_sizing_chart\", \"switch_count\": 2}"
+    },
+    {
+      "event_id": "EVT-000046",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "specification_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#specs",
+      "timestamp": "2026-09-23 19:02:00",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"tab\": \"sensor_compatibility\", \"switch_count\": 3}"
+    },
+    {
+      "event_id": "EVT-000047",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "size_guide_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#strap_fit",
+      "timestamp": "2026-09-23 19:02:35",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"modal\": \"strap_sizing_chart\", \"switch_count\": 4}"
+    },
+    {
+      "event_id": "EVT-000048",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "specification_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#specs",
+      "timestamp": "2026-09-23 19:03:10",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"tab\": \"sensor_compatibility\", \"switch_count\": 5}"
+    },
+    {
+      "event_id": "EVT-000049",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "size_guide_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#strap_fit",
+      "timestamp": "2026-09-23 19:03:45",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"modal\": \"strap_sizing_chart\", \"switch_count\": 6}"
+    },
+    {
+      "event_id": "EVT-000050",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "specification_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#specs",
+      "timestamp": "2026-09-23 19:04:20",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"tab\": \"sensor_compatibility\", \"switch_count\": 7}"
+    },
+    {
+      "event_id": "EVT-000051",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "size_guide_view",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007#strap_fit",
+      "timestamp": "2026-09-23 19:04:55",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"modal\": \"strap_sizing_chart\", \"switch_count\": 8}"
+    },
+    {
+      "event_id": "EVT-000052",
+      "customer_id": "CUST-1008",
+      "session_id": "SESS-1008-A",
+      "event_type": "page_exit_without_purchase",
+      "product_id": "PROD-007",
+      "page_url": "/product/PROD-007",
+      "timestamp": "2026-09-23 19:07:00",
+      "dwell_time_seconds": "0",
+      "metadata": "{\"reason\": \"high_hesitation_no_cart\", \"total_dwell_seconds\": 420, \"spec_switches\": 8}"
+    }
+  ]
+}

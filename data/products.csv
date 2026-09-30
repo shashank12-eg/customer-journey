@@ -1,0 +1,26 @@
+product_id,product_name,category,price,stock_quantity,description,avg_rating
+PROD-001,Ultra-Slim Wireless Mechanical Keyboard,Electronics,89.99,150,Low profile mechanical keyboard with Bluetooth 5.0 and RGB backlight.,4.6
+PROD-002,Noise Cancelling Over-Ear Headphones,Electronics,199.99,85,Active noise cancelling wireless headphones with 40h battery life.,4.4
+PROD-003,Ergonomic Mesh Office Chair,Furniture,249.5,40,Breathable mesh executive desk chair with adjustable lumbar support.,4.7
+PROD-004,Smart Fitness Tracker Band 6,Wearables,49.99,210,"Waterproof fitness band with heart rate, SpO2, and sleep tracker.",3.8
+PROD-005,Water-Resistant Commuter Backpack 25L,Bags & Luggage,64.99,120,Durable nylon laptop backpack with USB charging port and anti-theft pocket.,4.5
+PROD-006,Stainless Steel Thermal Travel Mug 500ml,Home & Kitchen,24.99,300,Double-wall vacuum insulated coffee tumbler keeping drinks hot for 8 hours.,4.8
+PROD-007,Pro GPS Multisport Smartwatch,Wearables,299.99,65,"Rugged GPS watch with topographic maps, sapphire crystal, and offline music.",4.3
+PROD-008,Fast Wireless Charging Stand 15W,Electronics,34.99,180,Qi-certified fast charging dock compatible with iPhone and Android.,4.2
+PROD-009,4K Ultra-HD Webcam with Dual Mic,Electronics,79.99,90,Auto-focus streaming webcam with built-in noise cancelling microphones.,4.1
+PROD-010,Merino Wool Breathable Running Tee,Apparel,54.0,110,Odor-resistant natural merino wool athletic shirt for training and marathon.,4.5
+PROD-011,Adjustable Aluminum Laptop Stand,Electronics,39.99,140,Foldable ergonomic riser for MacBooks and laptops up to 17 inches.,4.6
+PROD-012,Ceramic Pour-Over Coffee Dripper Set,Home & Kitchen,32.5,75,Artisan ceramic dripper with wooden collar and 100 unbleached filters.,4.9
+PROD-013,Men's Performance All-Weather Jacket,Apparel,145.0,55,Windproof and waterproof hooded shell jacket with sealed seams.,4.3
+PROD-014,Organic Cotton Yoga Mat 6mm,Sports & Fitness,45.0,95,Non-slip eco-friendly textured exercise mat with carrying strap.,4.7
+PROD-015,USB-C Multi-Port Hub 7-in-1,Electronics,42.99,160,"Adapter with 4K HDMI, 100W PD charging, SD card reader, and 3 USB 3.0 ports.",4.2
+PROD-016,Polarized UV400 Aviator Sunglasses,Accessories,29.99,130,Classic metal frame shades with glare reduction and protective hard case.,4.4
+PROD-017,Electric Sonic Toothbrush with Travel Case,Health & Personal Care,59.99,105,"40,000 VPM motor with 5 brushing modes and 4 replacement brush heads.",4.6
+PROD-018,Compact Cordless Stick Vacuum Cleaner,Home Appliances,189.0,45,Lightweight 250W brushless suction vacuum with HEPA filtration system.,4.0
+PROD-019,True Wireless Sport Earbuds with Earhooks,Electronics,69.99,115,IPX7 waterproof in-ear sports headphones with bass boost mode.,4.3
+PROD-020,"Hard Shell Polycarbonate Carry-On 20""",Bags & Luggage,119.99,50,TSA approved spinner luggage with 360 silent dual wheels.,4.5
+PROD-021,High-Precision Gaming Optical Mouse,Electronics,49.99,125,"16,000 DPI optical sensor, customizable RGB zones, and ultra-lightweight cable.",4.6
+PROD-022,Cast Iron Pre-Seasoned Skillet 10-Inch,Home & Kitchen,38.0,80,"Heavy-duty frying pan for stovetop, oven, and campfire cooking.",4.8
+PROD-023,Resistance Bands Workout Set (5-Pack),Sports & Fitness,22.99,250,"Stackable loop exercise bands with door anchor, handles, and ankle straps.",4.5
+PROD-024,Aromatherapy Essential Oil Diffuser 400ml,Home & Living,27.5,140,Ultrasonic cool mist humidifier with 7 color LED ambient lights.,4.4
+PROD-025,Memory Foam Ergonomic Neck Pillow,Travel,26.99,170,360 head and neck support pillow with washable breathable velvet cover.,4.6
