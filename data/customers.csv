@@ -1,0 +1,121 @@
+customer_id,name,email,phone,segment,created_at,total_lifetime_orders,preferred_payment_method
+CUST-1001,Sarah Chen,sarah.chen@example.com,+1-555-754-2824,Loyal VIP,2026-01-21 00:00:00,12,Credit Card
+CUST-1002,Marcus Vance,marcus.vance@example.com,+1-555-859-5506,Occasional Shopper,2026-03-18 00:00:00,3,Debit Card
+CUST-1003,Elena Rostova,elena.rostova@example.com,+1-555-328-3286,New Visitor,2026-02-10 00:00:00,1,Credit Card
+CUST-1004,David Kim,david.kim@example.com,+1-555-792-9935,High Value,2026-02-06 00:00:00,5,Credit Card
+CUST-1005,Amanda Garcia,amanda.garcia@example.com,+1-555-704-7912,Occasional Shopper,2026-01-23 00:00:00,4,PayPal
+CUST-1006,Robert Jenkins,robert.jenkins@example.com,+1-555-130-2535,Loyal VIP,2026-03-11 00:00:00,18,Credit Card
+CUST-1007,Maya Patel,maya.patel@example.com,+1-555-338-9279,Occasional Shopper,2026-06-18 00:00:00,2,Debit Card
+CUST-1008,Daniel O'Connor,daniel.oconnor@example.com,+1-555-127-4257,New Visitor,2026-06-30 00:00:00,0,Digital Wallet
+CUST-1009,Sophia Martinez,sophia.martinez@example.com,+1-555-818-9928,Window Shopper,2026-05-02 00:00:00,0,Credit Card
+CUST-1010,Kevin Zhang,kevin.zhang@example.com,+1-555-325-8359,High Value,2026-06-14 00:00:00,6,UPI
+CUST-1011,Chloe Chen,chloe.chen11@example.com,+1-555-877-3615,Lapsed Customer,2026-04-28 00:00:00,5,UPI
+CUST-1012,Kevin Iyer,kevin.iyer12@example.com,+1-555-881-6514,Loyal VIP,2026-02-02 00:00:00,20,Credit Card
+CUST-1013,Oliver Anderson,oliver.anderson13@example.com,+1-555-718-5333,Loyal VIP,2026-07-15 00:00:00,22,Digital Wallet
+CUST-1014,Daniel Dubois,daniel.dubois14@example.com,+1-555-180-5803,Lapsed Customer,2026-06-17 00:00:00,5,Digital Wallet
+CUST-1015,Liam Green,liam.green15@example.com,+1-555-171-1750,Lapsed Customer,2026-03-09 00:00:00,4,Credit Card
+CUST-1016,Lucas Patel,lucas.patel16@example.com,+1-555-489-5554,New Visitor,2026-06-21 00:00:00,5,Debit Card
+CUST-1017,Zara Anderson,zara.anderson17@example.com,+1-555-314-5374,Lapsed Customer,2026-07-03 00:00:00,1,Digital Wallet
+CUST-1018,Matthew Sharma,matthew.sharma18@example.com,+1-555-646-5010,High Value,2026-05-08 00:00:00,6,UPI
+CUST-1019,Matthew Scott,matthew.scott19@example.com,+1-555-670-4598,Lapsed Customer,2026-04-03 00:00:00,0,Debit Card
+CUST-1020,Elena Verma,elena.verma20@example.com,+1-555-510-5386,Loyal VIP,2026-03-05 00:00:00,18,Debit Card
+CUST-1021,Charlotte Clark,charlotte.clark21@example.com,+1-555-505-8517,High Value,2026-03-18 00:00:00,2,Debit Card
+CUST-1022,Evelyn Walker,evelyn.walker22@example.com,+1-555-651-5304,Lapsed Customer,2026-06-08 00:00:00,6,Digital Wallet
+CUST-1023,Amara Siddiqui,amara.siddiqui23@example.com,+1-555-324-3266,Window Shopper,2026-05-16 00:00:00,1,Credit Card
+CUST-1024,Daniel Zhang,daniel.zhang24@example.com,+1-555-742-3621,Lapsed Customer,2026-04-28 00:00:00,1,PayPal
+CUST-1025,Leo Young,leo.young25@example.com,+1-555-579-9669,Occasional Shopper,2026-05-31 00:00:00,0,NetBanking
+CUST-1026,Julian O'Connor,julian.oconnor26@example.com,+1-555-798-9797,Occasional Shopper,2026-07-25 00:00:00,5,Credit Card
+CUST-1027,Noah Harris,noah.harris27@example.com,+1-555-261-8433,Loyal VIP,2026-07-13 00:00:00,16,Digital Wallet
+CUST-1028,Caleb Kowalski,caleb.kowalski28@example.com,+1-555-619-2743,Lapsed Customer,2026-03-27 00:00:00,8,Digital Wallet
+CUST-1029,Liam Zhang,liam.zhang29@example.com,+1-555-482-3646,Window Shopper,2026-07-28 00:00:00,8,Credit Card
+CUST-1030,Gabriel Verma,gabriel.verma30@example.com,+1-555-600-1319,Loyal VIP,2026-04-12 00:00:00,17,Debit Card
+CUST-1031,David Al-Mansoor,david.al-mansoor31@example.com,+1-555-999-2290,Loyal VIP,2026-07-16 00:00:00,23,Credit Card
+CUST-1032,Caleb Lee,caleb.lee32@example.com,+1-555-884-3060,High Value,2026-06-27 00:00:00,7,Digital Wallet
+CUST-1033,Aarav Brown,aarav.brown33@example.com,+1-555-640-7932,High Value,2026-05-28 00:00:00,3,NetBanking
+CUST-1034,Olivia Nakamura,olivia.nakamura34@example.com,+1-555-787-7118,New Visitor,2026-05-22 00:00:00,7,Credit Card
+CUST-1035,Fatima Muller,fatima.muller35@example.com,+1-555-165-6539,Loyal VIP,2026-06-09 00:00:00,25,Debit Card
+CUST-1036,Isabella Muller,isabella.muller36@example.com,+1-555-107-2163,Lapsed Customer,2026-06-20 00:00:00,0,Debit Card
+CUST-1037,Amanda Rostova,amanda.rostova37@example.com,+1-555-980-6413,Loyal VIP,2026-05-21 00:00:00,15,UPI
+CUST-1038,Ryan Clark,ryan.clark38@example.com,+1-555-319-9834,High Value,2026-07-14 00:00:00,7,Debit Card
+CUST-1039,Benjamin White,benjamin.white39@example.com,+1-555-294-2545,Loyal VIP,2026-06-27 00:00:00,21,UPI
+CUST-1040,Mia White,mia.white40@example.com,+1-555-578-1887,Lapsed Customer,2026-06-26 00:00:00,1,Credit Card
+CUST-1041,Amara Adams,amara.adams41@example.com,+1-555-447-2790,High Value,2026-02-28 00:00:00,3,Digital Wallet
+CUST-1042,Alexander Martinez,alexander.martinez42@example.com,+1-555-532-4006,Occasional Shopper,2026-05-08 00:00:00,3,Credit Card
+CUST-1043,Alexander Walker,alexander.walker43@example.com,+1-555-200-1828,Lapsed Customer,2026-05-28 00:00:00,0,Credit Card
+CUST-1044,Caleb Al-Mansoor,caleb.al-mansoor44@example.com,+1-555-270-7658,New Visitor,2026-05-13 00:00:00,3,PayPal
+CUST-1045,David Sharma,david.sharma45@example.com,+1-555-488-1035,New Visitor,2026-03-18 00:00:00,7,UPI
+CUST-1046,Mia Scott,mia.scott46@example.com,+1-555-848-8973,High Value,2026-02-27 00:00:00,4,Debit Card
+CUST-1047,David Allen,david.allen47@example.com,+1-555-853-9883,Loyal VIP,2026-07-20 00:00:00,18,Credit Card
+CUST-1048,David Allen,david.allen48@example.com,+1-555-588-9238,Window Shopper,2026-02-19 00:00:00,0,Digital Wallet
+CUST-1049,Robert Kowalski,robert.kowalski49@example.com,+1-555-170-2113,Lapsed Customer,2026-03-11 00:00:00,6,Credit Card
+CUST-1050,Sebastian Al-Mansoor,sebastian.al-mansoor50@example.com,+1-555-692-1651,Window Shopper,2026-01-30 00:00:00,6,NetBanking
+CUST-1051,Isabella Hall,isabella.hall51@example.com,+1-555-635-6183,Occasional Shopper,2026-03-03 00:00:00,5,Debit Card
+CUST-1052,Ethan Nakamura,ethan.nakamura52@example.com,+1-555-234-5915,New Visitor,2026-03-31 00:00:00,1,Credit Card
+CUST-1053,Hannah Hernandez,hannah.hernandez53@example.com,+1-555-676-2638,Loyal VIP,2026-05-27 00:00:00,14,Digital Wallet
+CUST-1054,Ethan Martinez,ethan.martinez54@example.com,+1-555-457-2127,High Value,2026-04-14 00:00:00,4,Debit Card
+CUST-1055,Alexander Lee,alexander.lee55@example.com,+1-555-820-5956,Window Shopper,2026-06-26 00:00:00,8,Credit Card
+CUST-1056,Ryan Walker,ryan.walker56@example.com,+1-555-406-2697,High Value,2026-03-18 00:00:00,1,Credit Card
+CUST-1057,Evelyn Walker,evelyn.walker57@example.com,+1-555-259-5462,Occasional Shopper,2026-06-13 00:00:00,3,NetBanking
+CUST-1058,Grace Iyer,grace.iyer58@example.com,+1-555-803-5325,Window Shopper,2026-05-15 00:00:00,4,Credit Card
+CUST-1059,Robert King,robert.king59@example.com,+1-555-533-5533,Loyal VIP,2026-01-10 00:00:00,18,Debit Card
+CUST-1060,Matthew Brown,matthew.brown60@example.com,+1-555-265-8239,Window Shopper,2026-07-09 00:00:00,6,Digital Wallet
+CUST-1061,Sarah O'Connor,sarah.oconnor61@example.com,+1-555-177-3442,Window Shopper,2026-01-19 00:00:00,5,Digital Wallet
+CUST-1062,Emily Zhang,emily.zhang62@example.com,+1-555-540-3088,Loyal VIP,2026-03-29 00:00:00,19,Credit Card
+CUST-1063,Oliver Iyer,oliver.iyer63@example.com,+1-555-798-5088,Lapsed Customer,2026-02-05 00:00:00,5,Digital Wallet
+CUST-1064,Jack Hernandez,jack.hernandez64@example.com,+1-555-867-3532,High Value,2026-02-20 00:00:00,2,PayPal
+CUST-1065,Marcus Kowalski,marcus.kowalski65@example.com,+1-555-854-6442,New Visitor,2026-06-30 00:00:00,3,UPI
+CUST-1066,Aarav Scott,aarav.scott66@example.com,+1-555-210-7267,Loyal VIP,2026-05-10 00:00:00,15,Debit Card
+CUST-1067,Hannah Anderson,hannah.anderson67@example.com,+1-555-412-4728,High Value,2026-01-16 00:00:00,3,PayPal
+CUST-1068,Grace Taylor,grace.taylor68@example.com,+1-555-985-2137,Occasional Shopper,2026-04-09 00:00:00,8,PayPal
+CUST-1069,Amelia Lee,amelia.lee69@example.com,+1-555-439-1452,Loyal VIP,2026-03-17 00:00:00,13,Digital Wallet
+CUST-1070,Ethan Rostova,ethan.rostova70@example.com,+1-555-211-8119,Occasional Shopper,2026-07-15 00:00:00,5,PayPal
+CUST-1071,Gabriel Rodriguez,gabriel.rodriguez71@example.com,+1-555-218-7311,Window Shopper,2026-02-27 00:00:00,4,Credit Card
+CUST-1072,Harper Harris,harper.harris72@example.com,+1-555-101-9518,Window Shopper,2026-07-04 00:00:00,3,UPI
+CUST-1073,Mia Garcia,mia.garcia73@example.com,+1-555-780-6409,Window Shopper,2026-03-31 00:00:00,1,NetBanking
+CUST-1074,Olivia Rodriguez,olivia.rodriguez74@example.com,+1-555-416-7691,Occasional Shopper,2026-04-23 00:00:00,4,Digital Wallet
+CUST-1075,Sophia Smith,sophia.smith75@example.com,+1-555-530-7211,Lapsed Customer,2026-07-20 00:00:00,2,Digital Wallet
+CUST-1076,Sebastian Johnson,sebastian.johnson76@example.com,+1-555-515-9977,Loyal VIP,2026-03-28 00:00:00,17,Debit Card
+CUST-1077,Mia Allen,mia.allen77@example.com,+1-555-721-6279,New Visitor,2026-05-03 00:00:00,7,NetBanking
+CUST-1078,Ananya Rodriguez,ananya.rodriguez78@example.com,+1-555-584-3780,Lapsed Customer,2026-01-31 00:00:00,4,Digital Wallet
+CUST-1079,Ryan King,ryan.king79@example.com,+1-555-734-6491,Loyal VIP,2026-07-21 00:00:00,15,NetBanking
+CUST-1080,Olivia Muller,olivia.muller80@example.com,+1-555-925-4262,High Value,2026-01-16 00:00:00,0,Debit Card
+CUST-1081,Benjamin Hernandez,benjamin.hernandez81@example.com,+1-555-970-2193,New Visitor,2026-04-26 00:00:00,3,NetBanking
+CUST-1082,Nathan Dubois,nathan.dubois82@example.com,+1-555-606-7547,High Value,2026-02-16 00:00:00,0,Credit Card
+CUST-1083,Abigail Harris,abigail.harris83@example.com,+1-555-324-3881,Lapsed Customer,2026-05-22 00:00:00,7,Credit Card
+CUST-1084,Emily Al-Mansoor,emily.al-mansoor84@example.com,+1-555-968-2988,New Visitor,2026-02-13 00:00:00,7,NetBanking
+CUST-1085,Ava Walker,ava.walker85@example.com,+1-555-709-6198,New Visitor,2026-06-15 00:00:00,8,PayPal
+CUST-1086,Emily Martin,emily.martin86@example.com,+1-555-262-8777,New Visitor,2026-03-17 00:00:00,3,NetBanking
+CUST-1087,Chloe Nelson,chloe.nelson87@example.com,+1-555-896-9540,New Visitor,2026-06-19 00:00:00,3,UPI
+CUST-1088,Alexander Garcia,alexander.garcia88@example.com,+1-555-830-5681,High Value,2026-03-20 00:00:00,5,UPI
+CUST-1089,Henry Jenkins,henry.jenkins89@example.com,+1-555-241-3471,High Value,2026-04-18 00:00:00,2,NetBanking
+CUST-1090,Ananya Garcia,ananya.garcia90@example.com,+1-555-524-7678,Occasional Shopper,2026-05-28 00:00:00,7,PayPal
+CUST-1091,David Iyer,david.iyer91@example.com,+1-555-952-7883,New Visitor,2026-07-26 00:00:00,0,Digital Wallet
+CUST-1092,Leo Deshmukh,leo.deshmukh92@example.com,+1-555-106-6763,Occasional Shopper,2026-07-21 00:00:00,6,PayPal
+CUST-1093,Henry Baker,henry.baker93@example.com,+1-555-852-9947,Window Shopper,2026-03-07 00:00:00,7,Debit Card
+CUST-1094,Chloe Harris,chloe.harris94@example.com,+1-555-597-1475,New Visitor,2026-04-06 00:00:00,6,NetBanking
+CUST-1095,Aarav Thompson,aarav.thompson95@example.com,+1-555-230-9751,Loyal VIP,2026-04-20 00:00:00,8,Credit Card
+CUST-1096,Charlotte Harris,charlotte.harris96@example.com,+1-555-238-8564,High Value,2026-01-22 00:00:00,4,PayPal
+CUST-1097,Rohan Iyer,rohan.iyer97@example.com,+1-555-565-6355,Occasional Shopper,2026-07-23 00:00:00,6,UPI
+CUST-1098,Caleb White,caleb.white98@example.com,+1-555-358-2341,New Visitor,2026-01-14 00:00:00,8,Credit Card
+CUST-1099,Oliver Muller,oliver.muller99@example.com,+1-555-765-2124,Lapsed Customer,2026-01-20 00:00:00,0,Debit Card
+CUST-1100,Liam Vance,liam.vance100@example.com,+1-555-736-3496,High Value,2026-02-11 00:00:00,7,NetBanking
+CUST-1101,Daniel Hall,daniel.hall101@example.com,+1-555-323-8619,Lapsed Customer,2026-03-16 00:00:00,5,Debit Card
+CUST-1102,Gabriel Young,gabriel.young102@example.com,+1-555-865-2876,High Value,2026-03-30 00:00:00,1,Digital Wallet
+CUST-1103,Marcus Johnson,marcus.johnson103@example.com,+1-555-689-7149,New Visitor,2026-07-12 00:00:00,3,Credit Card
+CUST-1104,Isabella Scott,isabella.scott104@example.com,+1-555-950-4978,Loyal VIP,2026-07-07 00:00:00,17,NetBanking
+CUST-1105,Gabriel O'Connor,gabriel.oconnor105@example.com,+1-555-915-1672,Occasional Shopper,2026-05-26 00:00:00,6,NetBanking
+CUST-1106,Zara Garcia,zara.garcia106@example.com,+1-555-618-6590,Loyal VIP,2026-04-27 00:00:00,23,Credit Card
+CUST-1107,Mia Siddiqui,mia.siddiqui107@example.com,+1-555-750-8532,Lapsed Customer,2026-02-18 00:00:00,6,Debit Card
+CUST-1108,Julian Lewis,julian.lewis108@example.com,+1-555-766-5425,Window Shopper,2026-05-27 00:00:00,7,PayPal
+CUST-1109,Mia Adams,mia.adams109@example.com,+1-555-706-5397,Occasional Shopper,2026-03-13 00:00:00,1,UPI
+CUST-1110,Alexander Al-Mansoor,alexander.al-mansoor110@example.com,+1-555-868-8613,Window Shopper,2026-06-15 00:00:00,6,UPI
+CUST-1111,Marcus Clark,marcus.clark111@example.com,+1-555-971-6325,High Value,2026-05-14 00:00:00,3,UPI
+CUST-1112,Ethan Davis,ethan.davis112@example.com,+1-555-386-5526,Window Shopper,2026-01-12 00:00:00,8,Debit Card
+CUST-1113,Robert Al-Mansoor,robert.al-mansoor113@example.com,+1-555-837-7658,New Visitor,2026-06-01 00:00:00,3,NetBanking
+CUST-1114,Benjamin Wright,benjamin.wright114@example.com,+1-555-828-9041,New Visitor,2026-01-14 00:00:00,1,UPI
+CUST-1115,Lucas Nakamura,lucas.nakamura115@example.com,+1-555-808-4986,Occasional Shopper,2026-06-28 00:00:00,5,PayPal
+CUST-1116,Emily Lewis,emily.lewis116@example.com,+1-555-452-7971,Lapsed Customer,2026-05-30 00:00:00,5,UPI
+CUST-1117,Nathan Thompson,nathan.thompson117@example.com,+1-555-377-6023,Occasional Shopper,2026-03-10 00:00:00,1,NetBanking
+CUST-1118,Liam Verma,liam.verma118@example.com,+1-555-222-9779,Lapsed Customer,2026-02-26 00:00:00,3,Debit Card
+CUST-1119,Evelyn Deshmukh,evelyn.deshmukh119@example.com,+1-555-383-9595,Window Shopper,2026-03-23 00:00:00,1,Debit Card
+CUST-1120,Noah Muller,noah.muller120@example.com,+1-555-469-3939,Occasional Shopper,2026-01-13 00:00:00,8,Debit Card

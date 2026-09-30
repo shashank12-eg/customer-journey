@@ -1,0 +1,66 @@
+{
+  "scenario_name": "High-Intent Checkout Cart Abandonment",
+  "customer_id": "CUST-1002",
+  "observed_friction": "Cart Abandonment",
+  "evidence": "Customer added product PROD-005 ($64.99) to cart, progressed to shipping address step, dwelled for 190s upon shipping fee display, and exited without completing payment.",
+  "expected_cause": "Unexpected shipping fee friction at checkout step ($14.99 additional fee).",
+  "expected_severity": "MEDIUM",
+  "expected_recovery_action": "Trigger automated recovery email within 30 minutes offering free shipping promo code (FREESHIP24).",
+  "journey_events": [
+    {
+      "event_id": "EVT-000010",
+      "customer_id": "CUST-1002",
+      "session_id": "SESS-1002-A",
+      "event_type": "page_view",
+      "product_id": "",
+      "page_url": "/category/bags",
+      "timestamp": "2026-09-20 14:10:00",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"referrer\": \"google_ads\"}"
+    },
+    {
+      "event_id": "EVT-000011",
+      "customer_id": "CUST-1002",
+      "session_id": "SESS-1002-A",
+      "event_type": "product_view",
+      "product_id": "PROD-005",
+      "page_url": "/product/PROD-005",
+      "timestamp": "2026-09-20 14:10:40",
+      "dwell_time_seconds": "120",
+      "metadata": "{\"variant\": \"Charcoal Black\"}"
+    },
+    {
+      "event_id": "EVT-000012",
+      "customer_id": "CUST-1002",
+      "session_id": "SESS-1002-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-005",
+      "page_url": "/cart",
+      "timestamp": "2026-09-20 14:12:45",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"cart_value\": 64.99, \"quantity\": 1}"
+    },
+    {
+      "event_id": "EVT-000013",
+      "customer_id": "CUST-1002",
+      "session_id": "SESS-1002-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-005",
+      "page_url": "/checkout/shipping",
+      "timestamp": "2026-09-20 14:13:35",
+      "dwell_time_seconds": "190",
+      "metadata": "{\"shipping_cost_displayed\": 14.99, \"total_with_tax\": 84.98}"
+    },
+    {
+      "event_id": "EVT-000014",
+      "customer_id": "CUST-1002",
+      "session_id": "SESS-1002-A",
+      "event_type": "page_exit_without_purchase",
+      "product_id": "PROD-005",
+      "page_url": "/checkout/shipping",
+      "timestamp": "2026-09-20 14:16:50",
+      "dwell_time_seconds": "0",
+      "metadata": "{\"abandoned_step\": \"shipping_fee_reveal\", \"cart_value\": 64.99}"
+    }
+  ]
+}

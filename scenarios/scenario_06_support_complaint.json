@@ -1,0 +1,33 @@
+{
+  "scenario_name": "Unresolved High-Priority Customer Support Complaint",
+  "customer_id": "CUST-1006",
+  "observed_friction": "Customer Support Complaint",
+  "evidence": "Customer filed urgent support ticket TIK-3001 for wrong item received on order ORD-2006. Ticket SLA breached (unanswered for >32 hours).",
+  "expected_cause": "Customer support routing queue backlog and delayed first-response SLA.",
+  "expected_severity": "CRITICAL",
+  "expected_recovery_action": "Automated escalation to Senior Concierge Support Supervisor, immediate doorstep prepaid exchange pickup, and instant apology call/email.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000040",
+      "customer_id": "CUST-1006",
+      "session_id": "SESS-1006-TIK",
+      "event_type": "support_ticket_created",
+      "product_id": "PROD-013",
+      "page_url": "/support/tickets/new",
+      "timestamp": "2026-09-16 10:15:00",
+      "dwell_time_seconds": "180",
+      "metadata": "{\"ticket_id\": \"TIK-3001\", \"priority\": \"urgent\", \"category\": \"Product Sizing\"}"
+    },
+    {
+      "event_id": "EVT-000041",
+      "customer_id": "CUST-1006",
+      "session_id": "SESS-1006-TIK-CHECK",
+      "event_type": "support_ticket_viewed",
+      "product_id": "PROD-013",
+      "page_url": "/support/tickets/TIK-3001",
+      "timestamp": "2026-09-17 18:30:00",
+      "dwell_time_seconds": "120",
+      "metadata": "{\"status\": \"open\", \"agent_assigned\": false, \"hours_elapsed\": 32}"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "scenario_name": "Single Gateway Timeout Payment Failure",
+  "customer_id": "CUST-1003",
+  "observed_friction": "Payment Failure",
+  "evidence": "Customer attempted payment for ORD-2003 ($199.99), resulting in payment gateway error GATEWAY_TIMEOUT on attempt 1. Order left in pending/failed status.",
+  "expected_cause": "External banking gateway timeout during 3D secure authentication handshake.",
+  "expected_severity": "HIGH",
+  "expected_recovery_action": "Dispatch instant SMS and email with 1-click retry payment link and alternative payment rail options (UPI/PayPal/Debit).",
+  "journey_events": [
+    {
+      "event_id": "EVT-000015",
+      "customer_id": "CUST-1003",
+      "session_id": "SESS-1003-A",
+      "event_type": "product_view",
+      "product_id": "PROD-002",
+      "page_url": "/product/PROD-002",
+      "timestamp": "2026-09-21 16:20:00",
+      "dwell_time_seconds": "80",
+      "metadata": "{\"category\": \"Electronics\"}"
+    },
+    {
+      "event_id": "EVT-000016",
+      "customer_id": "CUST-1003",
+      "session_id": "SESS-1003-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-002",
+      "page_url": "/cart",
+      "timestamp": "2026-09-21 16:21:25",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"price\": 199.99}"
+    },
+    {
+      "event_id": "EVT-000017",
+      "customer_id": "CUST-1003",
+      "session_id": "SESS-1003-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-002",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-21 16:22:00",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"order_id\": \"ORD-2002\"}"
+    },
+    {
+      "event_id": "EVT-000018",
+      "customer_id": "CUST-1003",
+      "session_id": "SESS-1003-A",
+      "event_type": "payment_attempt",
+      "product_id": "PROD-002",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-21 16:22:50",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"payment_id\": \"PAY-5002\", \"method\": \"Credit Card\", \"attempt\": 1}"
+    },
+    {
+      "event_id": "EVT-000019",
+      "customer_id": "CUST-1003",
+      "session_id": "SESS-1003-A",
+      "event_type": "payment_failed",
+      "product_id": "PROD-002",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-21 16:23:30",
+      "dwell_time_seconds": "60",
+      "metadata": "{\"error_code\": \"GATEWAY_TIMEOUT\", \"error_message\": \"Payment gateway timed out while authenticating with bank\", \"attempt\": 1}"
+    }
+  ]
+}

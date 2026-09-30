@@ -1,0 +1,6 @@
+ticket_id,customer_id,order_id,subject,category,priority,status,created_at,resolved_at,resolution_notes
+TIK-3001,CUST-1006,ORD-2005,"Received wrong size jacket - completely unwearable, urgent replacement needed",Product Sizing,urgent,open,2026-09-16 10:15:00,,SLA breached: First response SLA (4 hours) exceeded by 36+ hours. Customer waiting for exchange.
+TIK-3002,CUST-1080,ORD-2056,Inquiry regarding invoice copy and warranty registration,General Inquiry,low,resolved,2026-09-18 12:02:18,2026-09-18 15:02:18,Invoice copy emailed to customer. Warranty registered successfully.
+TIK-3003,CUST-1088,ORD-2061,Inquiry regarding invoice copy and warranty registration,General Inquiry,low,resolved,2026-09-07 18:01:50,2026-09-07 21:01:50,Invoice copy emailed to customer. Warranty registered successfully.
+TIK-3004,CUST-1094,ORD-2066,Inquiry regarding invoice copy and warranty registration,General Inquiry,low,resolved,2026-09-02 08:01:47,2026-09-02 11:01:47,Invoice copy emailed to customer. Warranty registered successfully.
+TIK-3005,CUST-1111,ORD-2078,Inquiry regarding invoice copy and warranty registration,General Inquiry,low,resolved,2026-08-26 14:01:57,2026-08-26 17:01:57,Invoice copy emailed to customer. Warranty registered successfully.
