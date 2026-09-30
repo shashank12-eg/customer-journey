@@ -1,0 +1,110 @@
+{
+  "scenario_name": "Successful E-Commerce Purchase Journey",
+  "customer_id": "CUST-1001",
+  "observed_friction": "None",
+  "evidence": "Customer completed smooth progression from search, product view, add to cart, single-attempt payment, to timely order fulfillment and 5-star positive review.",
+  "expected_cause": "Frictionless UI/UX, transparent pricing, and instantaneous payment clearance.",
+  "expected_severity": "NONE",
+  "expected_recovery_action": "No corrective intervention required. Dispatch post-delivery VIP loyalty reward points and care guide.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000001",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "page_view",
+      "product_id": "",
+      "page_url": "/home",
+      "timestamp": "2026-09-15 10:00:00",
+      "dwell_time_seconds": "15",
+      "metadata": "{\"source\": \"organic_search\"}"
+    },
+    {
+      "event_id": "EVT-000002",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "search",
+      "product_id": "",
+      "page_url": "/search?q=ergonomic+chair",
+      "timestamp": "2026-09-15 10:00:20",
+      "dwell_time_seconds": "25",
+      "metadata": "{\"query\": \"ergonomic chair\"}"
+    },
+    {
+      "event_id": "EVT-000003",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "product_view",
+      "product_id": "PROD-003",
+      "page_url": "/product/PROD-003",
+      "timestamp": "2026-09-15 10:00:50",
+      "dwell_time_seconds": "90",
+      "metadata": "{\"tab\": \"overview\"}"
+    },
+    {
+      "event_id": "EVT-000004",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-003",
+      "page_url": "/cart",
+      "timestamp": "2026-09-15 10:02:25",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"quantity\": 1, \"price\": 249.5}"
+    },
+    {
+      "event_id": "EVT-000005",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-003",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-15 10:03:00",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"step\": \"shipping_address\"}"
+    },
+    {
+      "event_id": "EVT-000006",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "payment_attempt",
+      "product_id": "PROD-003",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-15 10:03:50",
+      "dwell_time_seconds": "20",
+      "metadata": "{\"method\": \"Credit Card\", \"attempt\": 1}"
+    },
+    {
+      "event_id": "EVT-000007",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "payment_success",
+      "product_id": "PROD-003",
+      "page_url": "/checkout/confirmation",
+      "timestamp": "2026-09-15 10:04:15",
+      "dwell_time_seconds": "40",
+      "metadata": "{\"transaction_id\": \"TXN-90111\", \"amount\": 249.5}"
+    },
+    {
+      "event_id": "EVT-000008",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-A",
+      "event_type": "order_placed",
+      "product_id": "PROD-003",
+      "page_url": "/order/ORD-2001",
+      "timestamp": "2026-09-15 10:04:20",
+      "dwell_time_seconds": "60",
+      "metadata": "{\"order_id\": \"ORD-2001\", \"amount\": 249.5}"
+    },
+    {
+      "event_id": "EVT-000009",
+      "customer_id": "CUST-1001",
+      "session_id": "SESS-1001-B",
+      "event_type": "feedback_submitted",
+      "product_id": "PROD-003",
+      "page_url": "/order/ORD-2001/feedback",
+      "timestamp": "2026-09-19 11:30:00",
+      "dwell_time_seconds": "75",
+      "metadata": "{\"rating\": 5, \"feedback_id\": \"FDB-4001\"}"
+    }
+  ]
+}

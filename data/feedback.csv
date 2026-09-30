@@ -1,0 +1,21 @@
+feedback_id,customer_id,product_id,order_id,rating,review_title,review_text,sentiment,feedback_date
+FDB-4001,CUST-1001,PROD-003,ORD-2001,5,Best office chair ever!,"Arrived right on time, assembly was a breeze, super comfortable for 8+ hour workdays.",positive,2026-09-19 11:30:00
+FDB-4002,CUST-1007,PROD-004,ORD-2006,1,"Defective screen, stopped working after 3 days",Horrible quality. The screen flickered and died completely on day 3. Battery overheats when plugged in. Do not buy!,negative,2026-09-16 14:20:00
+FDB-4003,CUST-1014,PROD-015,ORD-2010,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-12 03:01:54
+FDB-4004,CUST-1020,PROD-021,ORD-2015,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-07 01:02:12
+FDB-4005,CUST-1021,PROD-023,ORD-2016,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-18 01:02:04
+FDB-4006,CUST-1032,PROD-001,ORD-2021,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-08-24 08:02:12
+FDB-4007,CUST-1047,PROD-006,ORD-2032,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-08-14 09:02:01
+FDB-4008,CUST-1053,PROD-004,ORD-2036,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-04 11:01:50
+FDB-4009,CUST-1060,PROD-022,ORD-2040,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-18 23:02:02
+FDB-4010,CUST-1064,PROD-003,ORD-2043,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-02 05:02:21
+FDB-4011,CUST-1066,PROD-010,ORD-2045,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-08 23:01:53
+FDB-4012,CUST-1071,PROD-019,ORD-2049,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-24 06:02:06
+FDB-4013,CUST-1079,PROD-012,ORD-2055,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-21 05:02:11
+FDB-4014,CUST-1091,PROD-002,ORD-2063,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-04 22:02:12
+FDB-4015,CUST-1096,PROD-024,ORD-2068,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-01 09:01:53
+FDB-4016,CUST-1099,PROD-009,ORD-2070,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-12 05:02:13
+FDB-4017,CUST-1106,PROD-017,ORD-2074,3,Average product,"Decent product, packaging could be better.",neutral,2026-09-20 07:02:20
+FDB-4018,CUST-1111,PROD-012,ORD-2078,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-08-26 14:01:57
+FDB-4019,CUST-1113,PROD-010,ORD-2080,5,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-07 05:01:51
+FDB-4020,CUST-1114,PROD-018,ORD-2081,4,Great quality and fast delivery,Satisfied with purchase. Matches expectations.,positive,2026-09-18 10:02:13

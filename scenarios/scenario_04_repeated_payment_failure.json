@@ -1,0 +1,110 @@
+{
+  "scenario_name": "Repeated Multiple Payment Failure",
+  "customer_id": "CUST-1004",
+  "observed_friction": "Repeated Payment Failure",
+  "evidence": "Customer experienced 3 consecutive failed payment attempts within 6 minutes (CARD_DECLINED, INSUFFICIENT_FUNDS, CARD_DECLINED) on order ORD-2004 ($89.99).",
+  "expected_cause": "Card credit limit restriction and issuer security decline across multiple cards.",
+  "expected_severity": "CRITICAL",
+  "expected_recovery_action": "Trigger priority proactive WhatsApp message with concierge payment assistance, split-payment option, and 5% courtesy retry discount.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000020",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "product_view",
+      "product_id": "PROD-001",
+      "page_url": "/product/PROD-001",
+      "timestamp": "2026-09-22 11:00:00",
+      "dwell_time_seconds": "60",
+      "metadata": "{\"price\": 89.99}"
+    },
+    {
+      "event_id": "EVT-000021",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-001",
+      "page_url": "/cart",
+      "timestamp": "2026-09-22 11:01:05",
+      "dwell_time_seconds": "25",
+      "metadata": "{\"qty\": 1}"
+    },
+    {
+      "event_id": "EVT-000022",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-001",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-22 11:01:35",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"order_id\": \"ORD-2003\"}"
+    },
+    {
+      "event_id": "EVT-000023",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_attempt",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:02:10",
+      "dwell_time_seconds": "20",
+      "metadata": "{\"attempt\": 1, \"method\": \"Credit Card\"}"
+    },
+    {
+      "event_id": "EVT-000024",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_failed",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:02:35",
+      "dwell_time_seconds": "40",
+      "metadata": "{\"attempt\": 1, \"error_code\": \"CARD_DECLINED\", \"msg\": \"Issuer bank declined transaction\"}"
+    },
+    {
+      "event_id": "EVT-000025",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_attempt",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:03:30",
+      "dwell_time_seconds": "25",
+      "metadata": "{\"attempt\": 2, \"method\": \"Credit Card\"}"
+    },
+    {
+      "event_id": "EVT-000026",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_failed",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:04:00",
+      "dwell_time_seconds": "50",
+      "metadata": "{\"attempt\": 2, \"error_code\": \"INSUFFICIENT_FUNDS\", \"msg\": \"Account has insufficient available credit limit\"}"
+    },
+    {
+      "event_id": "EVT-000027",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_attempt",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:05:10",
+      "dwell_time_seconds": "20",
+      "metadata": "{\"attempt\": 3, \"method\": \"Debit Card\"}"
+    },
+    {
+      "event_id": "EVT-000028",
+      "customer_id": "CUST-1004",
+      "session_id": "SESS-1004-A",
+      "event_type": "payment_failed",
+      "product_id": "PROD-001",
+      "page_url": "/checkout/payment",
+      "timestamp": "2026-09-22 11:05:35",
+      "dwell_time_seconds": "90",
+      "metadata": "{\"attempt\": 3, \"error_code\": \"CARD_DECLINED\", \"msg\": \"Card authentication failed (3D Secure timeout)\"}"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Customer Journey Friction Detection & Recovery Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-badge">E-Commerce AI Agent</div>
+        <h1>Customer Journey Friction Detection & Recovery Assistant</h1>
+        <p class="subtitle">Synthetic Dataset, Journey Scenarios, Automated Testing & Recovery Orchestration</p>
+      </div>
+      <div class="header-actions">
+        <button id="runTestsBtn" class="btn btn-secondary">
+          <span class="icon">🧪</span> Run Test Suite (13 Tests)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- METRICS RIBBON -->
+  <section class="metrics-ribbon">
+    <div class="metric-card">
+      <div class="metric-val" id="totalCustomers">-</div>
+      <div class="metric-label">Synthetic Customers</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" id="totalEvents">-</div>
+      <div class="metric-label">Journey Telemetry Events</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" id="totalOrders">-</div>
+      <div class="metric-label">Orders Processed</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" id="totalScenarios">10</div>
+      <div class="metric-label">Validated Scenarios</div>
+    </div>
+    <div class="metric-card highlight">
+      <div class="metric-val" id="testPassStatus">100% PASS</div>
+      <div class="metric-label">Automated Test Pass Rate</div>
+    </div>
+  </section>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="dashboard-container">
+    <!-- QUICK SCENARIO SELECTOR -->
+    <section class="scenario-bar">
+      <div class="scenario-bar-title">
+        <span class="icon">⚡</span> Quick Scenarios:
+      </div>
+      <div class="scenario-chips" id="scenarioChips">
+        <!-- Dynamically rendered chips -->
+      </div>
+    </section>
+
+    <!-- CUSTOMER SELECTOR BAR -->
+    <section class="customer-picker-card">
+      <div class="picker-row">
+        <label for="customerSelect"><strong>Select Any Customer (120 Synthetic Profiles):</strong></label>
+        <select id="customerSelect" class="form-select">
+          <option value="">Loading customer list...</option>
+        </select>
+        <button id="refreshBtn" class="btn btn-sm btn-outline">🔄 Refresh</button>
+      </div>
+    </section>
+
+    <!-- TWO-COLUMN WORKSPACE -->
+    <div class="workspace-grid">
+      <!-- LEFT COLUMN: AI DIAGNOSIS & RECOVERY -->
+      <div class="left-col">
+        <!-- CUSTOMER PROFILE CARD -->
+        <div class="card customer-card">
+          <div class="card-header">
+            <h3>👤 Customer Profile</h3>
+            <span class="badge" id="customerSegmentBadge">Standard</span>
+          </div>
+          <div class="profile-details-grid">
+            <div><span class="muted">Customer ID:</span> <strong id="profileId">-</strong></div>
+            <div><span class="muted">Name:</span> <strong id="profileName">-</strong></div>
+            <div><span class="muted">Email:</span> <span id="profileEmail">-</span></div>
+            <div><span class="muted">Payment Pref:</span> <span id="profilePay">-</span></div>
+            <div><span class="muted">Lifetime Orders:</span> <span id="profileOrders">-</span></div>
+            <div><span class="muted">Account Created:</span> <span id="profileCreated">-</span></div>
+          </div>
+        </div>
+
+        <!-- AI FRICTION ANALYSIS CARD -->
+        <div class="card ai-card">
+          <div class="card-header">
+            <h3>🧠 AI Friction Detection</h3>
+            <div id="frictionStatusTag" class="status-tag status-none">Evaluating...</div>
+          </div>
+
+          <div class="ai-body">
+            <div class="metric-row">
+              <div class="metric-box">
+                <span class="muted">Category:</span>
+                <div class="val" id="aiCategory">-</div>
+              </div>
+              <div class="metric-box">
+                <span class="muted">Severity:</span>
+                <div class="val" id="aiSeverity">-</div>
+              </div>
+              <div class="metric-box">
+                <span class="muted">AI Confidence:</span>
+                <div class="val" id="aiConfidence">-</div>
+              </div>
+            </div>
+
+            <!-- CONFIDENCE PROGRESS BAR -->
+            <div class="confidence-bar-container">
+              <div class="confidence-label">
+                <span>Confidence Meter</span>
+                <span id="confidencePct">0%</span>
+              </div>
+              <div class="confidence-track">
+                <div id="confidenceFill" class="confidence-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="block-title">Root Cause Diagnosis:</span>
+              <p id="aiRootCause" class="block-desc">-</p>
+            </div>
+
+            <div class="info-block">
+              <span class="block-title">Observed Empirical Evidence:</span>
+              <div id="aiEvidence" class="evidence-box">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECOMMENDED RECOVERY INTERVENTION -->
+        <div class="card recovery-card">
+          <div class="card-header">
+            <h3>🚀 Recommended Recovery Action</h3>
+            <span class="badge badge-accent" id="actionTypeBadge">Action Plan</span>
+          </div>
+          <div class="recovery-body">
+            <div class="recovery-strategy" id="recoveryText">-</div>
+            <div class="recovery-action-btn-row">
+              <button id="dispatchInterventionBtn" class="btn btn-primary btn-block">
+                ✉️ Simulate Intervention Dispatch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: INTERACTIVE JOURNEY TIMELINE -->
+      <div class="right-col">
+        <div class="card timeline-card">
+          <div class="card-header">
+            <h3>⏱️ Customer Journey Event Timeline</h3>
+            <span class="badge" id="eventCountBadge">0 Events</span>
+          </div>
+          <div class="timeline-container" id="timelineContainer">
+            <div class="timeline-empty">Select a customer to view chronological journey events.</div>
+          </div>
+        </div>
+
+        <!-- RELATIONAL CONTEXT TABS -->
+        <div class="card context-card">
+          <div class="tab-headers">
+            <button class="tab-btn active" data-tab="ordersTab">Orders (<span id="ordersCount">0</span>)</button>
+            <button class="tab-btn" data-tab="paymentsTab">Payments (<span id="paymentsCount">0</span>)</button>
+            <button class="tab-btn" data-tab="ticketsTab">Tickets (<span id="ticketsCount">0</span>)</button>
+            <button class="tab-btn" data-tab="feedbackTab">Feedback (<span id="feedbackCount">0</span>)</button>
+          </div>
+          <div class="tab-content" id="tabContent">
+            <div id="tabDetails" class="tab-details-container">
+              <p class="muted">Select an item above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL FOR TEST EXECUTION -->
+  <div class="modal-backdrop" id="testModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>🧪 Automated Scenario Test Suite Execution</h3>
+        <button class="close-btn" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="test-status-summary" id="testModalSummary">
+          Running unittest suite against 10 benchmark customer scenarios...
+        </div>
+        <pre class="test-terminal" id="testTerminalOutput">Executing: python -m unittest tests/test_scenarios.py -v ...</pre>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">Intervention dispatched successfully!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "scenario_name": "Successful Friction Recovery via Omnichannel Intervention",
+  "customer_id": "CUST-1010",
+  "observed_friction": "Recovered Friction (Prior Cart Abandonment)",
+  "evidence": "Customer abandoned cart on PROD-008 ($69.98). System dispatched recovery email with RECOVER15 coupon. Customer clicked link 75 mins later, completed checkout, and successfully placed order ORD-2010.",
+  "expected_cause": "Initial price hesitation successfully resolved by personalized incentive recovery intervention.",
+  "expected_severity": "LOW",
+  "expected_recovery_action": "Record recovery campaign conversion in analytics, suppress further abandonment messaging, and dispatch order delivery tracking guide.",
+  "journey_events": [
+    {
+      "event_id": "EVT-000076",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-A",
+      "event_type": "product_view",
+      "product_id": "PROD-008",
+      "page_url": "/product/PROD-008",
+      "timestamp": "2026-09-25 15:00:00",
+      "dwell_time_seconds": "60",
+      "metadata": "{\"price\": 34.99}"
+    },
+    {
+      "event_id": "EVT-000077",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-A",
+      "event_type": "add_to_cart",
+      "product_id": "PROD-008",
+      "page_url": "/cart",
+      "timestamp": "2026-09-25 15:01:10",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"quantity\": 2, \"cart_total\": 69.98}"
+    },
+    {
+      "event_id": "EVT-000078",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-A",
+      "event_type": "checkout_started",
+      "product_id": "PROD-008",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-25 15:01:50",
+      "dwell_time_seconds": "45",
+      "metadata": "{\"step\": \"payment_selection\"}"
+    },
+    {
+      "event_id": "EVT-000079",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-A",
+      "event_type": "page_exit_without_purchase",
+      "product_id": "PROD-008",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-25 15:03:00",
+      "dwell_time_seconds": "0",
+      "metadata": "{\"friction_flag\": \"cart_abandoned\", \"cart_total\": 69.98}"
+    },
+    {
+      "event_id": "EVT-000080",
+      "customer_id": "CUST-1010",
+      "session_id": "SYSTEM-INTERVENTION",
+      "event_type": "recovery_email_sent",
+      "product_id": "PROD-008",
+      "page_url": "/system/notifications",
+      "timestamp": "2026-09-25 15:35:00",
+      "dwell_time_seconds": "0",
+      "metadata": "{\"coupon_code\": \"RECOVER15\", \"discount_percent\": 15, \"channel\": \"email_and_sms\"}"
+    },
+    {
+      "event_id": "EVT-000081",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-B",
+      "event_type": "recovery_link_clicked",
+      "product_id": "PROD-008",
+      "page_url": "/cart?coupon=RECOVER15",
+      "timestamp": "2026-09-25 16:50:00",
+      "dwell_time_seconds": "25",
+      "metadata": "{\"applied_coupon\": \"RECOVER15\", \"discounted_total\": 59.48}"
+    },
+    {
+      "event_id": "EVT-000082",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-B",
+      "event_type": "checkout_started",
+      "product_id": "PROD-008",
+      "page_url": "/checkout",
+      "timestamp": "2026-09-25 16:50:35",
+      "dwell_time_seconds": "30",
+      "metadata": "{\"step\": \"payment\"}"
+    },
+    {
+      "event_id": "EVT-000083",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-B",
+      "event_type": "payment_success",
+      "product_id": "PROD-008",
+      "page_url": "/checkout/confirmation",
+      "timestamp": "2026-09-25 16:51:15",
+      "dwell_time_seconds": "35",
+      "metadata": "{\"payment_id\": \"PAY-5009\", \"method\": \"UPI\", \"amount\": 59.48}"
+    },
+    {
+      "event_id": "EVT-000084",
+      "customer_id": "CUST-1010",
+      "session_id": "SESS-1010-B",
+      "event_type": "order_placed",
+      "product_id": "PROD-008",
+      "page_url": "/order/ORD-2007",
+      "timestamp": "2026-09-25 16:51:20",
+      "dwell_time_seconds": "50",
+      "metadata": "{\"order_id\": \"ORD-2007\", \"recovery_status\": \"converted\", \"coupon\": \"RECOVER15\"}"
+    }
+  ]
+}

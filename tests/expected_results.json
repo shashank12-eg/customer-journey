@@ -1,0 +1,112 @@
+{
+  "scenario_01_successful_purchase": {
+    "scenario_name": "Successful E-Commerce Purchase Journey",
+    "customer_id": "CUST-1001",
+    "expected_friction_detected": false,
+    "expected_friction_category": "None",
+    "expected_severity": "NONE",
+    "min_confidence": 0.85,
+    "evidence_keywords": ["browse", "order confirmation", "without errors"],
+    "recovery_keywords": ["No corrective intervention", "loyalty"],
+    "action_type": "NO_ACTION_LOYALTY"
+  },
+  "scenario_02_cart_abandonment": {
+    "scenario_name": "High-Intent Checkout Cart Abandonment",
+    "customer_id": "CUST-1002",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Cart Abandonment",
+    "expected_severity": "MEDIUM",
+    "min_confidence": 0.80,
+    "evidence_keywords": ["cart", "checkout", "abandoned"],
+    "recovery_keywords": ["recovery email", "coupon", "discount"],
+    "action_type": "ABANDONED_CART_DISCOUNT"
+  },
+  "scenario_03_payment_failure": {
+    "scenario_name": "Single Gateway Timeout Payment Failure",
+    "customer_id": "CUST-1003",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Payment Failure",
+    "expected_severity": "HIGH",
+    "min_confidence": 0.85,
+    "evidence_keywords": ["Payment", "failed", "GATEWAY_TIMEOUT"],
+    "recovery_keywords": ["retry", "SMS", "payment link"],
+    "action_type": "RETRY_PAYMENT_LINK"
+  },
+  "scenario_04_repeated_payment_failure": {
+    "scenario_name": "Repeated Multiple Payment Failure",
+    "customer_id": "CUST-1004",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Repeated Payment Failure",
+    "expected_severity": "CRITICAL",
+    "min_confidence": 0.90,
+    "evidence_keywords": ["consecutive", "payment failure", "CARD_DECLINED"],
+    "recovery_keywords": ["WhatsApp", "alternate payment", "discount"],
+    "action_type": "ALTERNATIVE_PAYMENT_PROMO"
+  },
+  "scenario_05_delivery_delay": {
+    "scenario_name": "Logistics Delivery Delay with High Tracking Inquiries",
+    "customer_id": "CUST-1005",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Delivery Delay",
+    "expected_severity": "HIGH",
+    "min_confidence": 0.85,
+    "evidence_keywords": ["delayed", "tracking", "times"],
+    "recovery_keywords": ["apology", "GPS", "credit"],
+    "action_type": "LOGISTICS_APOLOGY_CREDIT"
+  },
+  "scenario_06_support_complaint": {
+    "scenario_name": "Unresolved High-Priority Customer Support Complaint",
+    "customer_id": "CUST-1006",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Customer Support Complaint",
+    "expected_severity": "CRITICAL",
+    "min_confidence": 0.90,
+    "evidence_keywords": ["support ticket", "open", "TIK-3001"],
+    "recovery_keywords": ["Escalate", "supervisor", "pickup"],
+    "action_type": "SUPPORT_ESCALATION"
+  },
+  "scenario_07_negative_feedback": {
+    "scenario_name": "Severe Negative Product Feedback and Defect Report",
+    "customer_id": "CUST-1007",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Negative Product Feedback",
+    "expected_severity": "HIGH",
+    "min_confidence": 0.85,
+    "evidence_keywords": ["negative review", "PROD-004"],
+    "recovery_keywords": ["warranty", "replacement", "refund"],
+    "action_type": "WARRANTY_OUTREACH"
+  },
+  "scenario_08_product_confusion": {
+    "scenario_name": "Product Information Confusion and High Hesitation",
+    "customer_id": "CUST-1008",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Product Information Confusion",
+    "expected_severity": "MEDIUM",
+    "min_confidence": 0.80,
+    "evidence_keywords": ["specifications", "dwell", "without adding to cart"],
+    "recovery_keywords": ["AI Shopping Assistant", "sizing", "live chat"],
+    "action_type": "INTERACTIVE_AI_GUIDE"
+  },
+  "scenario_09_high_browsing_no_purchase": {
+    "scenario_name": "High Browsing Volume Without Purchase (Choice Paralysis)",
+    "customer_id": "CUST-1009",
+    "expected_friction_detected": true,
+    "expected_friction_category": "High Browsing But No Purchase",
+    "expected_severity": "MEDIUM",
+    "min_confidence": 0.80,
+    "evidence_keywords": ["browsed", "products", "without adding"],
+    "recovery_keywords": ["curated", "comparison", "coupon"],
+    "action_type": "CURATED_CATALOG_EMAIL"
+  },
+  "scenario_10_successful_recovery": {
+    "scenario_name": "Successful Friction Recovery via Omnichannel Intervention",
+    "customer_id": "CUST-1010",
+    "expected_friction_detected": true,
+    "expected_friction_category": "Recovered Friction",
+    "expected_severity": "LOW",
+    "min_confidence": 0.85,
+    "evidence_keywords": ["recovery", "clicked", "completed order"],
+    "recovery_keywords": ["Log recovery conversion", "suppress", "guide"],
+    "action_type": "SUPPRESS_AND_REWARD"
+  }
+}
